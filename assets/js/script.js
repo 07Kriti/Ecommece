@@ -12,7 +12,14 @@ const modalCloseFunc = function () { modal.classList.add('closed') }
 modalCloseOverlay.addEventListener('click', modalCloseFunc);
 modalCloseBtn.addEventListener('click', modalCloseFunc);
 
-
+const eventTrigger = () => {
+  const event = new Event('click');
+  gtag('config', 'G-NQM6KLHNXD');
+  dataLayer.push({
+    'event': 'subscribe',
+  });
+  console.log('Hello');
+}
 
 
 
