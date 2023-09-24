@@ -13,13 +13,27 @@ modalCloseOverlay.addEventListener('click', modalCloseFunc);
 modalCloseBtn.addEventListener('click', modalCloseFunc);
 
 const eventTrigger = () => {
-  const event = new Event('click');
+ // const event = new Event('click');
   gtag('config', 'G-NQM6KLHNXD');
   dataLayer.push({
     'event': 'subscribe',
   });
   console.log('Hello');
 }
+const eventTrigger2 = () => {
+  // const event = new Event('click');
+   gtag('config', 'G-NQM6KLHNXD');
+   dataLayer.push({
+     'event': 'dress_click',
+   });
+   console.log('Hello');
+ }
+
+
+
+
+
+
 
 
 
